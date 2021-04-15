@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+    {% block css %}
+    <link rel="stylesheet" href="/static/css/cat.css">
+
+    {% endblock %}
+
+    {% block content %}
+
+
+    <section class="cards-wrapper cat">
+        {% for category in categories %}
+
+        <div class="card-grid-space ">
+            <a class="card" href="/tweets/{{ category.slug }}" style="background-image: url(/static/img/category/{{ category.name }}.jpg);">
+                <div class="box-heading-name">
+                    <h1>{{ category.name }}</h1>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+
+
+    </section>
+
+
+
+
+
+
+{% endblock %}
+
+

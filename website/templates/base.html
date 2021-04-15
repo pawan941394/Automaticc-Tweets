@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Freet</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link href="/static/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="/static/lib/animate/animate.min.css" rel="stylesheet">
+    <link href="/static/lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <link href="/static/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="/static/lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+    <link href="/static/css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/navbar.css">
+    <link rel="stylesheet" href="/static/css/footer.css">
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/preloader.css">
+        {% block css %}
+    {% endblock %}
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+
+
+
+    <div id="main-preloader" class="main-preloader semi-dark-background">
+
+        <img src="/static/img/preloader/1.png" alt="" srcset="" style="padding-top: 28vh;">
+        <div class="main-preloader-inner center">
+
+            <h1 class="preloader-percentage center">
+
+                <span class="preloader-percentage-text">0</span>
+                <span class="percentage">%</span>
+            </h1>
+            <div class="preloader-bar-outer">
+                <div class="preloader-bar"></div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <header id="header" class="fixed-top">
+        <div class="container">
+
+            <div class="logo float-left">
+                <a href="/" class="scrollto"><img src="/static/img/logo/logo.png" alt="" class="img-fluid"></a>
+            </div>
+
+            <nav class="main-nav float-right d-none d-lg-block">
+                <ul>
+                    <li class="active"><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                       {% if user.is_authenticated %}
+          <li class="nav-item">
+        <a class="nav-link" href="/logout">logout</a>
+      </li>
+        {% else %}
+         <li class="nav-item">
+        <a class="nav-link" href="/login">Register/Login</a>
+      </li>
+        {% endif %}
+                    <li><a href="/tweets"> Tweets</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    {% block content %}
+
+{% endblock %}
+    <footer id="footer">
+
+        <div class="footer-basic">
+            <footer>
+                <div class="social"><a href="https://www.instagram.com/pawan941394/"><i class="icon ion-social-instagram" style="color: #8a3ab9;"></i></a><a href="https://www.linkedin.com/in/pawan941394/"><i class="icon ion-social-linkedin" style="color: #4c68d7;"></i></a></div>
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Home</a></li>
+                    <li class="list-inline-item"><a href="/about">About Us</a></li>
+                    <li class="list-inline-item"><a href="/register">Register</a></li>
+                    <li class="list-inline-item"><a href="/tweets">Tweets</a></li>
+                    <li class="list-inline-item"><a href="/contact">Contact Us</a></li>
+                </ul>
+                <p class="copyright"> <a href="https://www.linkedin.com/in/pawan941394/">pawan kumar</a> <strong style="color: black; font-weight: 900;">©</strong> 2021-2022</p>
+            </footer>
+        </div>
+    </footer>
+
+    <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+    <script src="/static/lib/jquery/jquery.min.js"></script>
+    <script src="/static/lib/jquery/jquery-migrate.min.js"></script>
+    <script src="/static/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/lib/easing/easing.min.js"></script>
+    <script src="/static/lib/mobile-nav/mobile-nav.js"></script>
+    <script src="/static/lib/wow/wow.min.js"></script>
+    <script src="/static/lib/waypoints/waypoints.min.js"></script>
+    <script src="/static/lib/counterup/counterup.min.js"></script>
+    <script src="/static/lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/static/lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="/static/lib/lightbox/js/lightbox.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    <script src="/static/js/main.js"></script>
+
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="/static/js/preloader.js"></script>
+
+    <script type="text/javascript">
+        $('body').jpreLoader({
+            preMainSection: '#main-preloader',
+            prePerText: '.preloader-percentage-text',
+            preBar: '.preloader-bar',
+        });
+    </script>
+    <script type="text/javascript">
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-36251023-1']);
+        _gaq.push(['_setDomainName', 'jqueryscript.net']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+
+{% block script %}
+
+{% endblock %}
+</body>
+
+</html>

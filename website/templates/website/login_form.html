@@ -1,0 +1,18 @@
+{% extends 'base.html' %} {% block css %}
+
+<link rel="stylesheet" href="/static/css/register.css"> {% endblock %} {% block content %}
+
+
+<section class="guide-registeration">
+    <div class='login'>
+        <h2>Login here</h2>
+        <form action="/login" method="POST">
+            {% csrf_token %}
+            <input type="text" name="username" id="username" placeholder="UserName" required>
+            <input type="password" name="password" id="Password" placeholder="Password" required>
+            <input class='animated' type='submit' value='login' id="open-popup-btn">
+        </form>
+        <a class='forgot' href='/register'>Donot have an account Register here</a>
+    </div>
+</section>
+{% endblock %}
