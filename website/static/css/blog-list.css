@@ -1,0 +1,7 @@
+.blog-list {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-top: 18vh;
+}

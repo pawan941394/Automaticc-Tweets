@@ -1,0 +1,16 @@
+
+.blog-details {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20vh;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:750px) {
+    .reply-comment {
+        width: 100px;
+        height: 100px;
+    }
+}
